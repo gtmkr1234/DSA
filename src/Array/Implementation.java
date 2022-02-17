@@ -39,7 +39,7 @@ class ArrayImplementation{
 public class Implementation {
     public static void main(String[] args) {
         ArrayImplementation obj = new ArrayImplementation();
+        obj.insert(5,15)
         obj.traverse();
     }
-
 }
