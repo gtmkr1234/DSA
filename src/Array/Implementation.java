@@ -12,6 +12,7 @@ class ArrayImplementation{
         arr = new int[n];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = Integer.MIN_VALUE;
+            // we have set the default value of array to Integer.MIN_VALUE
         }
     }
     public void traverse(){
@@ -38,8 +39,9 @@ class ArrayImplementation{
 }
 public class Implementation {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         ArrayImplementation obj = new ArrayImplementation();
-        obj.insert(5,15);
+        obj.insert(0,15);
         obj.traverse();
     }
 }
