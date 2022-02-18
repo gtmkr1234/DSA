@@ -2,13 +2,14 @@ package Array;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import static java.lang.System.*;
 
 class ArrayImplementation{
     private int [] arr;
 
     public ArrayImplementation() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size of your array");
+        Scanner sc = new Scanner(in);
+        out.println("Enter the size of your array");
         int n = sc.nextInt();
         arr = new int[n];
         // we have set the default value of array to Integer.MIN_VALUE
@@ -17,7 +18,7 @@ class ArrayImplementation{
     public void traverse(){
         // method to print each value inside the array
         for(int res : arr){
-            System.out.println(res);
+            out.println(res);
         }
     }
     public void insert(int index, int value){
@@ -28,13 +29,21 @@ class ArrayImplementation{
                 arr[index] = value;
             }
             else{
-                System.out.println("location already filled");
+                out.println("location already filled");
             }
         }
         catch(ArrayIndexOutOfBoundsException err){
-            System.out.println("Invalid index!!!");
+            out.println("Invalid index!!!");
         }
     }
+    public void getValue(int index){
+        try{
+            out.println(arr[index]);
+        }catch(ArrayIndexOutOfBoundsException err){
+            out.println("Invalid index!!!");
+        }
+    }
+
 }
 public class Implementation {
     public static void main(String[] args) {
