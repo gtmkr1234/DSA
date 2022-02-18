@@ -7,11 +7,8 @@ import static java.lang.System.*;
 class ArrayImplementation{
     private int [] arr;
 
-    public ArrayImplementation() {
-        Scanner sc = new Scanner(in);
-        out.println("Enter the size of your array");
-        int n = sc.nextInt();
-        arr = new int[n];
+    public ArrayImplementation(int size) {
+        arr = new int[size];
         // we have set the default value of array to Integer.MIN_VALUE
         Arrays.fill(arr, Integer.MIN_VALUE);
     }
@@ -43,12 +40,33 @@ class ArrayImplementation{
             out.println("Invalid index!!!");
         }
     }
+    public void search(int value){
+        for (int j : arr) {
+            if (j == value) {
+                out.println("Value found");
+                return;
+            }
+        }
+        out.println("Value doesn't found");
+    }
+    public void delete(int index){
+        try{
+            arr[index] = Integer.MIN_VALUE;
+        }
+        catch(ArrayIndexOutOfBoundsException obj){
+            out.println("Invalid index");
+        }
+    }
 
 }
 public class Implementation {
     public static void main(String[] args) {
-        ArrayImplementation obj = new ArrayImplementation();
+        ArrayImplementation obj = new ArrayImplementation(3);
         obj.insert(0,15);
-        obj.traverse();
+        obj.insert(1,20);
+        obj.insert(2,25);
+        obj.delete(1);
+        obj.getValue(2);
+
     }
 }
