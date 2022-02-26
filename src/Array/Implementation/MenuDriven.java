@@ -1,6 +1,5 @@
-package Array;
+package Array.Implementation;
 
-import java.util.Arrays;
 import java.util.Scanner;
 import static java.lang.System.*;
 
@@ -12,7 +11,6 @@ public class MenuDriven {
         out.println("Enter the size of the array ");
         int n = sc.nextInt();
         arr = new int[n];
-        Arrays.fill(arr,0);
     }
     public void traverse(){
         for(int j: arr){
@@ -27,5 +25,13 @@ public class MenuDriven {
             out.println("Invalid Index");
         }
     }
-    
+    public void add(int element){
+
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(in);
+        MenuDriven obj = new MenuDriven();
+
+    }
 }

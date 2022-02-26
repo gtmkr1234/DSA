@@ -1,7 +1,7 @@
-package Array;
+package Array.Implementation;
 
 import java.util.Arrays;
-import java.util.Scanner;
+
 import static java.lang.System.*;
 
 class ArrayImplementation{
