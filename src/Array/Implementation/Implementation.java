@@ -5,7 +5,7 @@ import java.util.Arrays;
 import static java.lang.System.*;
 
 class ArrayImplementation{
-    private int [] arr;
+    private final int [] arr;
 
     public ArrayImplementation(int size) {
         arr = new int[size];
