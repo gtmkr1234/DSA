@@ -33,12 +33,29 @@ public class Implementation{
                 temp = temp.next;
             }
         }
+
+        public void insert(int data, int index){
+            Node n = new Node(data);
+            if(index == 0){
+                n.next = head;
+                head = n;
+            }
+            else{
+                Node nd = head;
+                for (int i = 0; i < index-1; i++) {
+                    nd = nd.next;
+                }
+                n.next = nd.next;
+                nd.next = n;
+            }
+        }
     }
 
     public static void main(String[] args) {
         LinkedList obj = new LinkedList();
         obj.insert(15);
         obj.insert(45);
+        obj.insert(156,1);
 
         obj.show();
     }
