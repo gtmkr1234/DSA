@@ -13,7 +13,6 @@ public class Implementation{
         Node head;
         public void insert(int data){
             Node nd = new Node(data);
-            nd.next = null;
 
             if(head== null){
                 head = nd;
@@ -33,7 +32,6 @@ public class Implementation{
                 temp = temp.next;
             }
         }
-
         public void insert(int data, int index){
             Node n = new Node(data);
             if(index == 0){
@@ -49,13 +47,30 @@ public class Implementation{
                 nd.next = n;
             }
         }
+        public void deleteAtIndex(int index){
+            if(index==0){
+                head = head.next;
+            }
+            else{
+                Node n = head;
+                Node n1;
+                for (int i = 0; i < index-1; i++) {
+                    n = n.next;
+                }
+                n1 = n.next;
+                n.next = n1.next;
+                n1 = null;
+            }
+        }
     }
+
 
     public static void main(String[] args) {
         LinkedList obj = new LinkedList();
         obj.insert(15);
         obj.insert(45);
         obj.insert(156,1);
+        obj.deleteAtIndex(0);
 
         obj.show();
     }
