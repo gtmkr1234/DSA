@@ -1,4 +1,4 @@
-package SeSo.Sorting;
+package Sorting;
 
 public class InsertionSort {
     public static void insertionSort(int [] arr){
