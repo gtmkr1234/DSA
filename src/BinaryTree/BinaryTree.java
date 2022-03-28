@@ -13,15 +13,9 @@ public class BinaryTree {
             return;
         }
         else{
-            System.out.print(root.data + " -> ");
-            if(root.left != null){
-                System.out.print(" L");
-            }
+            System.out.print(root.data );
+            System.out.println();
             print(root.left);
-            if(root.right!= null){
-                System.out.print(" R");
-            }
-
             print(root.right);
         }
     }
