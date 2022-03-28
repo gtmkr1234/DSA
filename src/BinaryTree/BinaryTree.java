@@ -13,18 +13,18 @@ public class BinaryTree {
             return;
         }
         else{
-            System.out.print(root.data );
+            System.out.print(root.data);
             System.out.println();
             print(root.left);
             print(root.right);
         }
     }
     public static void main(String[] args) {
-        BinaryNode <Integer> root = new BinaryNode<Integer>(15);
-        BinaryNode<Integer> Rleft = new BinaryNode<Integer>(10);
-        BinaryNode<Integer> Rright = new BinaryNode<Integer>(20);
-        BinaryNode<Integer> o1 = new BinaryNode<Integer>(55);
-        BinaryNode<Integer> o2 = new BinaryNode<Integer>(45);
+        BinaryNode <Integer> root = new BinaryNode<>(15);
+        BinaryNode<Integer> Rleft = new BinaryNode<>(10);
+        BinaryNode<Integer> Rright = new BinaryNode<>(20);
+        BinaryNode<Integer> o1 = new BinaryNode<>(55);
+        BinaryNode<Integer> o2 = new BinaryNode<>(45);
 
         root.left=Rleft;
         root.right=Rright;
