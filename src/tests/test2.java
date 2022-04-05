@@ -49,11 +49,10 @@ public class test2 {
             if(root==null){
                 return;
             }
-            else {
                 postorder(root.left);
                 postorder(root.right);
                 System.out.println(root.data);
-            }
+
         }
 
     }
