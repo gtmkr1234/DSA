@@ -8,5 +8,7 @@ public class test {
         obj.put("DEF", 56);
         int a = obj.get("ABC");
         System.out.println(a);
+        int b = obj.getOrDefault("khdkj",-1);
+        System.out.println(b);
     }
 }
