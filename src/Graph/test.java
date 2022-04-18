@@ -5,7 +5,8 @@ public class test {
     public static void main(String[] args) {
         HashMap <String,Integer> obj = new HashMap<>();
         obj.put("ABC",50);
-        obj.put("ABC", 56);
-        obj.get("ABC");
+        obj.put("DEF", 56);
+        int a = obj.get("ABC");
+        System.out.println(a);
     }
 }
