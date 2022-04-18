@@ -1,6 +1,7 @@
 package Graph;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Scanner;
 
 public class MapOOP {
@@ -13,7 +14,7 @@ public class MapOOP {
     }
 }
 class Map{
-    HashMap<String, Integer> obj;
+    HashMap<String, List<Integer>> obj;
     public Map(){
         obj = new HashMap<>();
     }
