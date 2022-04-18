@@ -10,5 +10,7 @@ public class test {
         System.out.println(a);
         int b = obj.getOrDefault("DEF",-1);
         System.out.println(b);
+        System.out.println(obj);
+        //Key can not be duplicated but values can be
     }
 }
