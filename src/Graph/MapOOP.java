@@ -1,21 +1,23 @@
 package Graph;
 
 import java.util.HashMap;
-import java.util.List;
+import java.util.LinkedList;
+import java.util.Map;
 import java.util.Scanner;
 
 public class MapOOP {
     public static void main(String[] args) {
-        Map o1 = new Map();
+        Mapo o1 = new Mapo();
         o1.insert();
         o1.insert();
         o1.out();
+        o1.display();
 
     }
 }
-class Map{
-    HashMap<String, List<Integer>> obj;
-    public Map(){
+class Mapo{
+    HashMap<String, Integer> obj;
+    public Mapo(){
         obj = new HashMap<>();
     }
     public void insert(){
@@ -32,5 +34,11 @@ class Map{
         String str = s.nextLine();
         int res = obj.get(str);
         System.out.println(res);
+    }
+    public void display(){
+        for(Map.Entry<String, Integer> res : obj.entrySet()){
+            System.out.println(res.getKey());
+            System.out.println(res.getValue());
+        }
     }
 }
