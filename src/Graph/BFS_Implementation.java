@@ -28,5 +28,6 @@ public class BFS_Implementation {
                 }
             }
         }
+        return bfs;
     }
 }
