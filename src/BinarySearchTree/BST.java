@@ -51,12 +51,23 @@ public class BST {
         preorder(root.left);
         preorder(root.right);
     }
+    public void inorder(node root){
+        if(root==null){
+            return;
+        }
+        inorder(root.left);
+        System.out.println(root.data);
+        inorder(root.right);
+    }
 
     public static void main(String[] args) {
         BST obj = new BST();
         obj.insert(15);
         obj.insert(55);
         obj.insert(65);
-        obj.preorder(obj.root);
+        obj.insert(12);
+        obj.insert(3);
+        obj.insert(13);
+        obj.inorder(obj.root);
     }
 }
