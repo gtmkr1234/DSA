@@ -59,7 +59,6 @@ public class BST {
         System.out.println(root.data);
         inorder(root.right);
     }
-
     public static void main(String[] args) {
         BST obj = new BST();
         obj.insert(15);
@@ -69,5 +68,7 @@ public class BST {
         obj.insert(3);
         obj.insert(13);
         obj.inorder(obj.root);
+        System.out.println();
+        obj.preorder(obj.root);
     }
 }
