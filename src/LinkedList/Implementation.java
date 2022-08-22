@@ -11,6 +11,7 @@ public class Implementation{
     }
     static class LinkedList{
         Node head;
+        // insert function
         public void insert(int data){
             Node nd = new Node(data);
 
