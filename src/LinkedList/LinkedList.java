@@ -1,10 +1,10 @@
 package LinkedList;
-public class LinkedList {
-    ListNode head = new ListNode();
+public class SinglyLinkedList {
+    private ListNode head ;
     private static class ListNode{
-        int data;
-        ListNode next;
-        ListNode(int data){
+        private int data;
+        private ListNode next;
+        public ListNode(int data){
             this.data = data;
             this.next = null;
         }
