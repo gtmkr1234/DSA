@@ -47,7 +47,7 @@ public class BST {
         if(root==null){
             return;
         }
-        System.out.print(root.data);
+        System.out.println(root.data);
         preorder(root.left);
         preorder(root.right);
     }
