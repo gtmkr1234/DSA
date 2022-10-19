@@ -40,7 +40,7 @@ public class SinglyLinkedList {
         second.next = third;
         third.next = fourth;
         sll.display();
-        System.out.println(sll.length());
+        System.out.println(sll.length());//print the length of linked list
 
     }
 }
